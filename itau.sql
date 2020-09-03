@@ -1,0 +1,307 @@
+-- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: itau
+-- ------------------------------------------------------
+-- Server version	8.0.20
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `itau`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `itau` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `itau`;
+
+--
+-- Table structure for table `bck_clientes`
+--
+
+DROP TABLE IF EXISTS `bck_clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `bck_clientes` (
+  `codigo_cliente` int NOT NULL,
+  `nome_cliente` varchar(50) NOT NULL,
+  `idade_cliente` int NOT NULL,
+  `email_cliente` varchar(80) NOT NULL,
+  `endereco_cliente` varchar(80) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bck_clientes`
+--
+
+LOCK TABLES `bck_clientes` WRITE;
+/*!40000 ALTER TABLE `bck_clientes` DISABLE KEYS */;
+INSERT INTO `bck_clientes` VALUES (1,'Antonio',35,'antonio@itau.com.br','Rua Catao'),(2,'Caio',22,'caio@itau.com.br','Atualizar, preencher Endereço'),(3,'Alberto',30,'alberto@itau.com.br','Rua Fábia'),(4,'Arianda',18,'arianda@itau.com.br','Atualizar, preencher Endereço'),(5,'Alessandro',28,'alessandro@itau.com.br','Atualizar, preencher Endereço'),(1,'Paloma Macias',72,'ante@blanditNamnulla.com','Atualizar, preencher Endereço'),(2,'Quail Roy',76,'non@orciquis.ca','Atualizar, preencher Endereço'),(3,'Malcolm Q. Simmons',20,'Vestibulum.ut.eros@volutpat.net','Atualizar, preencher Endereço'),(4,'Sasha Richards',75,'nunc.Quisque@volutpat.org','Atualizar, preencher Endereço'),(5,'Wendy X. Stephenson',68,'eleifend.Cras@rutrumjustoPraesent.net','Atualizar, preencher Endereço'),(6,'Hyacinth Vega',76,'Phasellus.libero@lobortisrisus.co.uk','Atualizar, preencher Endereço'),(7,'Regan Pearson',74,'iaculis.odio.Nam@justo.com','Atualizar, preencher Endereço'),(8,'Honorato Floyd',50,'montes.nascetur@dictummagna.org','Rua Fábia'),(9,'Audrey Dale',82,'id@consequat.edu','Atualizar, preencher Endereço'),(10,'Elvis Whitaker',52,'rhoncus@ipsumSuspendisse.com','Atualizar, preencher Endereço'),(11,'Brock Sanders',44,'mollis.vitae@Innecorci.com','Rua Tito'),(12,'Lucas Sutton',41,'vel@duiCras.net','Atualizar, preencher Endereço'),(13,'George Pugh',38,'iaculis@vel.co.uk','Atualizar, preencher Endereço'),(14,'Lacota R. Singleton',72,'tellus.sem.mollis@feugiatnonlobortis.net','Atualizar, preencher Endereço'),(15,'Jeanette U. Branch',72,'consequat.enim@etmagnaPraesent.co.uk','Atualizar, preencher Endereço'),(16,'Jenna Harrison',79,'aliquet.diam.Sed@Morbineque.org','Atualizar, preencher Endereço'),(17,'MacKenzie X. Yang',26,'ridiculus.mus@necurnasuscipit.ca','Atualizar, preencher Endereço'),(18,'Jonah X. Meyer',74,'arcu@ligulaNullam.net','Atualizar, preencher Endereço'),(19,'Acton S. Burnett',34,'sapien.Cras@etliberoProin.net','Atualizar, preencher Endereço'),(20,'Eliana Little',85,'Curae@a.com','Atualizar, preencher Endereço'),(21,'Coby C. Casey',54,'magna.sed@lacinia.net','Atualizar, preencher Endereço'),(22,'Mollie Z. Noel',68,'risus.Donec.nibh@quamelementum.com','Atualizar, preencher Endereço'),(23,'Stone Z. Gill',38,'Suspendisse.dui@ullamcorper.net','Atualizar, preencher Endereço'),(24,'May R. Gentry',43,'vitae.posuere@lacinia.co.uk','Atualizar, preencher Endereço'),(25,'Zeph Beach',51,'Proin@massa.co.uk','Atualizar, preencher Endereço'),(26,'Jameson J. Blanchard',55,'gravida@cursusin.com','Atualizar, preencher Endereço'),(27,'Arsenio M. Gamble',69,'Vestibulum@cursuset.co.uk','Atualizar, preencher Endereço'),(28,'Ila Vinson',61,'gravida.Praesent.eu@erat.com','Atualizar, preencher Endereço'),(29,'Giselle Kinney',45,'erat@Cum.com','Atualizar, preencher Endereço'),(30,'Melyssa Hobbs',42,'parturient.montes@disparturientmontes.com','Atualizar, preencher Endereço'),(31,'Hammett Franco',73,'Donec@Cum.edu','Atualizar, preencher Endereço'),(32,'Nola Y. Owens',41,'Donec.tincidunt.Donec@turpisAliquamadipiscing.org','Atualizar, preencher Endereço'),(33,'Doris U. Mcgee',74,'auctor.odio.a@cubilia.net','Atualizar, preencher Endereço'),(34,'Rebekah N. Keith',66,'lacinia@purusaccumsaninterdum.co.uk','Atualizar, preencher Endereço'),(35,'Oliver V. Sullivan',38,'est@Suspendisse.com','Atualizar, preencher Endereço'),(36,'Kamal B. Mitchell',24,'ridiculus.mus@Crasvulputate.co.uk','Atualizar, preencher Endereço'),(37,'Acton K. Mejia',61,'consectetuer.adipiscing@volutpatNulla.com','Atualizar, preencher Endereço'),(38,'Charlotte T. Sutton',81,'in.aliquet.lobortis@turpis.edu','Atualizar, preencher Endereço'),(39,'Shay Whitney',59,'at@Nullam.edu','Atualizar, preencher Endereço'),(40,'Hakeem Jarvis',62,'pharetra.nibh@magnaSedeu.ca','Atualizar, preencher Endereço'),(41,'Norman Q. Le',69,'Cras.lorem@ami.co.uk','Atualizar, preencher Endereço'),(42,'Michael K. Mills',35,'vestibulum.lorem@arcuVestibulum.edu','Atualizar, preencher Endereço'),(43,'Michael E. Bradley',85,'erat.volutpat.Nulla@inlobortis.edu','Atualizar, preencher Endereço'),(44,'Tanisha B. Oneal',67,'aliquam.eros@eu.co.uk','Atualizar, preencher Endereço'),(45,'Candace Bolton',58,'Nulla.eget@nunc.edu','Atualizar, preencher Endereço'),(46,'Brody Bradford',45,'enim.gravida.sit@Infaucibus.org','Atualizar, preencher Endereço'),(47,'Colorado Ortega',74,'molestie.dapibus@utaliquam.co.uk','Atualizar, preencher Endereço'),(48,'Brianna U. Abbott',81,'montes@utipsum.net','Atualizar, preencher Endereço'),(49,'Maite Erickson',65,'ligula@Integer.ca','Atualizar, preencher Endereço'),(50,'Giacomo Graves',33,'et.ipsum@quamelementum.co.uk','Atualizar, preencher Endereço'),(51,'Eleanor A. Nieves',48,'mus.Aenean@Innecorci.ca','Atualizar, preencher Endereço'),(52,'Duncan I. Odonnell',76,'felis.purus.ac@gravidaPraesenteu.org','Atualizar, preencher Endereço'),(53,'Ingrid Fitzpatrick',43,'velit.Quisque@nullaCraseu.net','Atualizar, preencher Endereço'),(54,'Delilah Crawford',44,'mi@ametnullaDonec.co.uk','Rua Tito'),(55,'Barbara Montgomery',70,'magna.Phasellus@loremac.co.uk','Atualizar, preencher Endereço'),(56,'Tanner Jennings',27,'mauris.sagittis.placerat@Quisqueornaretortor.com','Atualizar, preencher Endereço'),(57,'Myles Chandler',68,'massa.Quisque.porttitor@CuraeDonectincidunt.edu','Atualizar, preencher Endereço'),(58,'Bryar Heath',23,'facilisis.Suspendisse.commodo@ante.org','Atualizar, preencher Endereço'),(59,'Elaine Crane',43,'Cras.interdum@magnamalesuadavel.ca','Atualizar, preencher Endereço'),(60,'Jolie Middleton',22,'egestas.ligula.Nullam@Maurisnon.org','Atualizar, preencher Endereço'),(61,'Alden A. Fischer',86,'Sed.eu@orci.com','Atualizar, preencher Endereço'),(62,'Clio Vincent',36,'nec.diam@lobortisClassaptent.net','Atualizar, preencher Endereço'),(63,'Stuart X. Mcbride',80,'mattis@arcuVestibulum.co.uk','Atualizar, preencher Endereço'),(64,'Kay U. Herman',66,'tincidunt@inhendrerit.co.uk','Atualizar, preencher Endereço'),(65,'Kennan Booker',70,'quis@magna.net','Atualizar, preencher Endereço'),(66,'Gray Church',48,'Nam.porttitor.scelerisque@Ut.net','Atualizar, preencher Endereço'),(67,'Demetria Solomon',88,'Cras.convallis.convallis@magna.com','Atualizar, preencher Endereço'),(68,'Ezekiel Hoffman',20,'Morbi.metus.Vivamus@lobortisultrices.co.uk','Atualizar, preencher Endereço'),(69,'Knox D. Robbins',89,'auctor.velit.eget@sitametconsectetuer.com','Atualizar, preencher Endereço'),(70,'Karleigh Powers',50,'pede@risusDonec.org','Rua Fábia'),(71,'Rudyard Day',36,'risus.Duis@inmolestie.ca','Atualizar, preencher Endereço'),(72,'Blaine Holcomb',69,'aptent.taciti.sociosqu@orcilobortisaugue.com','Atualizar, preencher Endereço'),(73,'Imogene H. Watts',68,'Aliquam@massa.ca','Atualizar, preencher Endereço'),(74,'Jameson R. Stephens',64,'ut@mattisCraseget.ca','Atualizar, preencher Endereço'),(75,'Preston Guthrie',89,'porttitor.scelerisque@lectus.edu','Atualizar, preencher Endereço'),(76,'Hayden M. Goodwin',79,'sed.hendrerit.a@Nunclectus.co.uk','Atualizar, preencher Endereço'),(77,'Brynn Wells',75,'Donec.non.justo@Quisquenonummyipsum.com','Atualizar, preencher Endereço'),(78,'Erich Casey',74,'amet@euultrices.co.uk','Atualizar, preencher Endereço'),(79,'Gil Rutledge',53,'orci.adipiscing@sed.net','Atualizar, preencher Endereço'),(80,'Hoyt Park',53,'Maecenas.iaculis@torquent.co.uk','Atualizar, preencher Endereço'),(81,'Simon Santana',73,'erat.eget.ipsum@euodio.org','Atualizar, preencher Endereço'),(82,'Ima X. Russell',44,'eu.placerat@NullamnislMaecenas.org','Rua Tito'),(83,'Lev W. Love',28,'est@estac.edu','Atualizar, preencher Endereço'),(84,'Brock U. Munoz',23,'tellus.faucibus@In.com','Atualizar, preencher Endereço'),(85,'Suki P. Freeman',81,'magnis.dis.parturient@estmollis.net','Atualizar, preencher Endereço'),(86,'Maile P. Tate',24,'euismod.in.dolor@utquam.org','Atualizar, preencher Endereço'),(87,'Hermione X. Wheeler',30,'Nunc.sed@Sed.co.uk','Rua Fábia'),(88,'Moana Fuller',33,'sed.sapien@Aliquamultrices.ca','Atualizar, preencher Endereço'),(89,'Paki U. Maldonado',45,'vehicula.Pellentesque.tincidunt@idmagna.org','Atualizar, preencher Endereço'),(90,'Imogene S. Randolph',44,'sit.amet@Nulla.net','Rua Tito'),(91,'Kiona B. Wyatt',80,'rhoncus.Proin@nonummy.org','Atualizar, preencher Endereço'),(92,'Jordan S. House',22,'ut.molestie.in@utipsumac.net','Atualizar, preencher Endereço'),(93,'Keith K. Berry',55,'varius@nunc.net','Atualizar, preencher Endereço'),(94,'Kay I. King',53,'magna.malesuada@orciin.com','Atualizar, preencher Endereço'),(95,'Cecilia Shannon',87,'lectus.pede.et@lacusEtiam.org','Atualizar, preencher Endereço'),(96,'Joy Hodges',30,'Curabitur.massa.Vestibulum@nonleo.co.uk','Rua Fábia'),(97,'Cole Guerra',69,'elit@nuncinterdum.co.uk','Atualizar, preencher Endereço'),(98,'Bert G. Levy',36,'tempor.bibendum@egestasrhoncusProin.net','Atualizar, preencher Endereço'),(99,'Oren Nunez',35,'ac.turpis.egestas@nec.net','Atualizar, preencher Endereço'),(100,'Nero D. Savage',21,'Nunc@tristiquenequevenenatis.ca','Atualizar, preencher Endereço');
+/*!40000 ALTER TABLE `bck_clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cargo`
+--
+
+DROP TABLE IF EXISTS `cargo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cargo` (
+  `CodCargo` char(2) NOT NULL,
+  `NomeCargo` varchar(50) NOT NULL,
+  `ValorCargo` decimal(8,2) NOT NULL,
+  PRIMARY KEY (`CodCargo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cargo`
+--
+
+LOCK TABLES `cargo` WRITE;
+/*!40000 ALTER TABLE `cargo` DISABLE KEYS */;
+INSERT INTO `cargo` VALUES ('C1','CAIXA',890.00),('C2','VENDEDOR',1890.00),('C3','GERENTE',4999.99),('C4','ADM_REDE',3600.99),('C5','Almoxarifado',1200.00),('C6','Segurança',1500.00),('C7','Analista Suporte',3400.00),('C8','Contador',1200.00);
+/*!40000 ALTER TABLE `cargo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cargo_1`
+--
+
+DROP TABLE IF EXISTS `cargo_1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cargo_1` (
+  `CodCargo` char(2) NOT NULL,
+  `NomeCargo` varchar(50) NOT NULL,
+  `ValorCargo` decimal(8,2) NOT NULL,
+  PRIMARY KEY (`CodCargo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cargo_1`
+--
+
+LOCK TABLES `cargo_1` WRITE;
+/*!40000 ALTER TABLE `cargo_1` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cargo_1` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `clientes` (
+  `codigo_cliente` int NOT NULL AUTO_INCREMENT,
+  `nome_cliente` varchar(50) NOT NULL,
+  `cpf_cliente` varchar(11) NOT NULL,
+  `idade_cliente` int NOT NULL,
+  `data_cadastro` date DEFAULT NULL,
+  `endereco_cliente` varchar(80) NOT NULL,
+  `cep_cliente` varchar(8) NOT NULL,
+  `email_cliente` varchar(80) NOT NULL,
+  `telefone_whatsapp_cliente` varchar(11) NOT NULL,
+  PRIMARY KEY (`codigo_cliente`)
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `clientes`
+--
+
+LOCK TABLES `clientes` WRITE;
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (1,'Givanildo','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(2,'Petrolina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(3,'Petrolina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(4,'Petrolina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(5,'Cristina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(6,'Alfredina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(7,'Creolina','25616653642',46,'2020-08-26','Rua Clélia','05049000','giva@itau.com.br','1199995432'),(8,'Antonio Carlos Ribeiro Junior','cpf_cliente',35,'2020-08-26','Rua Catao','0','antonio@itau.com.br','0'),(9,'Caio','cpf_cliente',22,'2020-08-26','Rua Tito, 100','0','caio@itau.com.br','0'),(10,'Alberto','cpf_cliente',30,'2020-08-26','Rua Fábia','0','alberto@itau.com.br','0'),(11,'Arianda','cpf_cliente',18,'2020-08-26','Atualizar, preencher Endereço','0','arianda@itau.com.br','0'),(12,'Alessandro','cpf_cliente',28,'2020-08-26','Atualizar, preencher Endereço','0','alessandro@itau.com.br','0'),(13,'Paloma Macias','cpf_cliente',72,'2020-08-26','Atualizar, preencher Endereço','0','ante@blanditNamnulla.com','0'),(14,'Quail Roy','cpf_cliente',76,'2020-08-26','Atualizar, preencher Endereço','0','non@orciquis.ca','0'),(15,'Malcolm Q. Simmons','cpf_cliente',20,'2020-08-26','Atualizar, preencher Endereço','0','Vestibulum.ut.eros@volutpat.net','0'),(16,'Sasha Richards','cpf_cliente',75,'2020-08-26','Atualizar, preencher Endereço','0','nunc.Quisque@volutpat.org','0'),(17,'Wendy X. Stephenson','cpf_cliente',68,'2020-08-26','Atualizar, preencher Endereço','0','eleifend.Cras@rutrumjustoPraesent.net','0'),(18,'Hyacinth Vega','cpf_cliente',76,'2020-08-26','Atualizar, preencher Endereço','0','Phasellus.libero@lobortisrisus.co.uk','0'),(19,'Regan Pearson','cpf_cliente',74,'2020-08-26','Atualizar, preencher Endereço','0','iaculis.odio.Nam@justo.com','0'),(20,'Honorato Floyd','cpf_cliente',50,'2020-08-26','Rua Fábia','0','montes.nascetur@dictummagna.org','0'),(21,'Audrey Dale','cpf_cliente',82,'2020-08-26','Atualizar, preencher Endereço','0','id@consequat.edu','0'),(22,'Elvis Whitaker','cpf_cliente',52,'2020-08-26','Atualizar, preencher Endereço','0','rhoncus@ipsumSuspendisse.com','0'),(23,'Brock Sanders','cpf_cliente',44,'2020-08-26','Rua Tito, 100','0','mollis.vitae@Innecorci.com','0'),(24,'Lucas Sutton','cpf_cliente',41,'2020-08-26','Atualizar, preencher Endereço','0','vel@duiCras.net','0'),(25,'George Pugh','cpf_cliente',38,'2020-08-26','Atualizar, preencher Endereço','0','iaculis@vel.co.uk','0'),(26,'Lacota R. Singleton','cpf_cliente',72,'2020-08-26','Atualizar, preencher Endereço','0','tellus.sem.mollis@feugiatnonlobortis.net','0'),(27,'Jeanette U. Branch','cpf_cliente',72,'2020-08-26','Atualizar, preencher Endereço','0','consequat.enim@etmagnaPraesent.co.uk','0'),(28,'Jenna Harrison','cpf_cliente',79,'2020-08-26','Atualizar, preencher Endereço','0','aliquet.diam.Sed@Morbineque.org','0'),(29,'MacKenzie X. Yang','cpf_cliente',26,'2020-08-26','Atualizar, preencher Endereço','0','ridiculus.mus@necurnasuscipit.ca','0'),(30,'Jonah X. Meyer','cpf_cliente',74,'2020-08-26','Atualizar, preencher Endereço','0','arcu@ligulaNullam.net','0'),(31,'Acton S. Burnett','cpf_cliente',34,'2020-08-26','Atualizar, preencher Endereço','0','sapien.Cras@etliberoProin.net','0'),(32,'Eliana Little','cpf_cliente',85,'2020-08-26','Atualizar, preencher Endereço','0','Curae@a.com','0'),(33,'Coby C. Casey','cpf_cliente',54,'2020-08-26','Atualizar, preencher Endereço','0','magna.sed@lacinia.net','0'),(34,'Mollie Z. Noel','cpf_cliente',68,'2020-08-26','Atualizar, preencher Endereço','0','risus.Donec.nibh@quamelementum.com','0'),(35,'Stone Z. Gill','cpf_cliente',38,'2020-08-26','Atualizar, preencher Endereço','0','Suspendisse.dui@ullamcorper.net','0'),(36,'May R. Gentry','cpf_cliente',43,'2020-08-26','Atualizar, preencher Endereço','0','vitae.posuere@lacinia.co.uk','0'),(37,'Zeph Beach','cpf_cliente',51,'2020-08-26','Atualizar, preencher Endereço','0','Proin@massa.co.uk','0'),(38,'Jameson J. Blanchard','cpf_cliente',55,'2020-08-26','Atualizar, preencher Endereço','0','gravida@cursusin.com','0'),(39,'Arsenio M. Gamble','cpf_cliente',69,'2020-08-26','Atualizar, preencher Endereço','0','Vestibulum@cursuset.co.uk','0'),(40,'Ila Vinson','cpf_cliente',61,'2020-08-26','Atualizar, preencher Endereço','0','gravida.Praesent.eu@erat.com','0'),(41,'Giselle Kinney','cpf_cliente',45,'2020-08-26','Atualizar, preencher Endereço','0','erat@Cum.com','0'),(42,'Melyssa Hobbs','cpf_cliente',42,'2020-08-26','Atualizar, preencher Endereço','0','parturient.montes@disparturientmontes.com','0'),(43,'Hammett Franco','cpf_cliente',73,'2020-08-26','Atualizar, preencher Endereço','0','Donec@Cum.edu','0'),(44,'Nola Y. Owens','cpf_cliente',41,'2020-08-26','Atualizar, preencher Endereço','0','Donec.tincidunt.Donec@turpisAliquamadipiscing.org','0'),(45,'Doris U. Mcgee','cpf_cliente',74,'2020-08-26','Atualizar, preencher Endereço','0','auctor.odio.a@cubilia.net','0'),(46,'Rebekah N. Keith','cpf_cliente',66,'2020-08-26','Atualizar, preencher Endereço','0','lacinia@purusaccumsaninterdum.co.uk','0'),(47,'Oliver V. Sullivan','cpf_cliente',38,'2020-08-26','Atualizar, preencher Endereço','0','est@Suspendisse.com','0'),(48,'Kamal B. Mitchell','cpf_cliente',24,'2020-08-26','Atualizar, preencher Endereço','0','ridiculus.mus@Crasvulputate.co.uk','0'),(49,'Acton K. Mejia','cpf_cliente',61,'2020-08-26','Atualizar, preencher Endereço','0','consectetuer.adipiscing@volutpatNulla.com','0'),(50,'Charlotte T. Sutton','cpf_cliente',81,'2020-08-26','Atualizar, preencher Endereço','0','in.aliquet.lobortis@turpis.edu','0'),(51,'Shay Whitney','cpf_cliente',59,'2020-08-26','Atualizar, preencher Endereço','0','at@Nullam.edu','0'),(52,'Hakeem Jarvis','cpf_cliente',62,'2020-08-26','Atualizar, preencher Endereço','0','pharetra.nibh@magnaSedeu.ca','0'),(53,'Norman Q. Le','cpf_cliente',69,'2020-08-26','Atualizar, preencher Endereço','0','Cras.lorem@ami.co.uk','0'),(54,'Michael K. Mills','cpf_cliente',35,'2020-08-26','Atualizar, preencher Endereço','0','vestibulum.lorem@arcuVestibulum.edu','0'),(55,'Michael E. Bradley','cpf_cliente',85,'2020-08-26','Atualizar, preencher Endereço','0','erat.volutpat.Nulla@inlobortis.edu','0'),(56,'Tanisha B. Oneal','cpf_cliente',67,'2020-08-26','Atualizar, preencher Endereço','0','aliquam.eros@eu.co.uk','0'),(57,'Candace Bolton','cpf_cliente',58,'2020-08-26','Atualizar, preencher Endereço','0','Nulla.eget@nunc.edu','0'),(58,'Brody Bradford','cpf_cliente',45,'2020-08-26','Atualizar, preencher Endereço','0','enim.gravida.sit@Infaucibus.org','0'),(59,'Colorado Ortega','cpf_cliente',74,'2020-08-26','Atualizar, preencher Endereço','0','molestie.dapibus@utaliquam.co.uk','0'),(60,'Brianna U. Abbott','cpf_cliente',81,'2020-08-26','Atualizar, preencher Endereço','0','montes@utipsum.net','0'),(61,'Maite Erickson','cpf_cliente',65,'2020-08-26','Atualizar, preencher Endereço','0','ligula@Integer.ca','0'),(62,'Giacomo Graves','cpf_cliente',33,'2020-08-26','Atualizar, preencher Endereço','0','et.ipsum@quamelementum.co.uk','0'),(63,'Eleanor A. Nieves','cpf_cliente',48,'2020-08-26','Atualizar, preencher Endereço','0','mus.Aenean@Innecorci.ca','0'),(64,'Duncan I. Odonnell','cpf_cliente',76,'2020-08-26','Atualizar, preencher Endereço','0','felis.purus.ac@gravidaPraesenteu.org','0'),(65,'Ingrid Fitzpatrick','cpf_cliente',43,'2020-08-26','Atualizar, preencher Endereço','0','velit.Quisque@nullaCraseu.net','0'),(66,'Delilah Crawford','cpf_cliente',44,'2020-08-26','Rua Tito','0','mi@ametnullaDonec.co.uk','0'),(67,'Barbara Montgomery','cpf_cliente',70,'2020-08-26','Atualizar, preencher Endereço','0','magna.Phasellus@loremac.co.uk','0'),(68,'Tanner Jennings','cpf_cliente',27,'2020-08-26','Atualizar, preencher Endereço','0','mauris.sagittis.placerat@Quisqueornaretortor.com','0'),(69,'Myles Chandler','cpf_cliente',68,'2020-08-26','Atualizar, preencher Endereço','0','massa.Quisque.porttitor@CuraeDonectincidunt.edu','0'),(70,'Bryar Heath','cpf_cliente',23,'2020-08-26','Atualizar, preencher Endereço','0','facilisis.Suspendisse.commodo@ante.org','0'),(71,'Elaine Crane','cpf_cliente',43,'2020-08-26','Atualizar, preencher Endereço','0','Cras.interdum@magnamalesuadavel.ca','0'),(72,'Jolie Middleton','cpf_cliente',22,'2020-08-26','Atualizar, preencher Endereço','0','egestas.ligula.Nullam@Maurisnon.org','0'),(73,'Alden A. Fischer','cpf_cliente',86,'2020-08-26','Atualizar, preencher Endereço','0','Sed.eu@orci.com','0'),(74,'Clio Vincent','cpf_cliente',36,'2020-08-26','Atualizar, preencher Endereço','0','nec.diam@lobortisClassaptent.net','0'),(75,'Stuart X. Mcbride','cpf_cliente',80,'2020-08-26','Atualizar, preencher Endereço','0','mattis@arcuVestibulum.co.uk','0'),(76,'Kay U. Herman','cpf_cliente',66,'2020-08-26','Atualizar, preencher Endereço','0','tincidunt@inhendrerit.co.uk','0'),(77,'Kennan Booker','cpf_cliente',70,'2020-08-26','Atualizar, preencher Endereço','0','quis@magna.net','0'),(78,'Gray Church','cpf_cliente',48,'2020-08-26','Atualizar, preencher Endereço','0','Nam.porttitor.scelerisque@Ut.net','0'),(79,'Demetria Solomon','cpf_cliente',88,'2020-08-26','Atualizar, preencher Endereço','0','Cras.convallis.convallis@magna.com','0'),(80,'Ezekiel Hoffman','cpf_cliente',20,'2020-08-26','Atualizar, preencher Endereço','0','Morbi.metus.Vivamus@lobortisultrices.co.uk','0'),(81,'Knox D. Robbins','cpf_cliente',89,'2020-08-26','Atualizar, preencher Endereço','0','auctor.velit.eget@sitametconsectetuer.com','0'),(82,'Karleigh Powers','cpf_cliente',50,'2020-08-26','Rua Fábia','0','pede@risusDonec.org','0'),(83,'Rudyard Day','cpf_cliente',36,'2020-08-26','Atualizar, preencher Endereço','0','risus.Duis@inmolestie.ca','0'),(84,'Blaine Holcomb','cpf_cliente',69,'2020-08-26','Atualizar, preencher Endereço','0','aptent.taciti.sociosqu@orcilobortisaugue.com','0'),(85,'Imogene H. Watts','cpf_cliente',68,'2020-08-26','Atualizar, preencher Endereço','0','Aliquam@massa.ca','0'),(86,'Jameson R. Stephens','cpf_cliente',64,'2020-08-26','Atualizar, preencher Endereço','0','ut@mattisCraseget.ca','0'),(87,'Preston Guthrie','cpf_cliente',89,'2020-08-26','Atualizar, preencher Endereço','0','porttitor.scelerisque@lectus.edu','0'),(88,'Hayden M. Goodwin','cpf_cliente',79,'2020-08-26','Atualizar, preencher Endereço','0','sed.hendrerit.a@Nunclectus.co.uk','0'),(89,'Brynn Wells','cpf_cliente',75,'2020-08-26','Atualizar, preencher Endereço','0','Donec.non.justo@Quisquenonummyipsum.com','0'),(90,'Erich Casey','cpf_cliente',74,'2020-08-26','Atualizar, preencher Endereço','0','amet@euultrices.co.uk','0'),(91,'Gil Rutledge','cpf_cliente',53,'2020-08-26','Atualizar, preencher Endereço','0','orci.adipiscing@sed.net','0'),(92,'Hoyt Park','cpf_cliente',53,'2020-08-26','Atualizar, preencher Endereço','0','Maecenas.iaculis@torquent.co.uk','0'),(93,'Simon Santana','cpf_cliente',73,'2020-08-26','Atualizar, preencher Endereço','0','erat.eget.ipsum@euodio.org','0'),(94,'Ima X. Russell','cpf_cliente',44,'2020-08-26','Rua Tito','0','eu.placerat@NullamnislMaecenas.org','0'),(95,'Lev W. Love','cpf_cliente',28,'2020-08-26','Atualizar, preencher Endereço','0','est@estac.edu','0'),(96,'Brock U. Munoz','cpf_cliente',23,'2020-08-26','Atualizar, preencher Endereço','0','tellus.faucibus@In.com','0'),(97,'Suki P. Freeman','cpf_cliente',81,'2020-08-26','Atualizar, preencher Endereço','0','magnis.dis.parturient@estmollis.net','0'),(98,'Maile P. Tate','cpf_cliente',24,'2020-08-26','Atualizar, preencher Endereço','0','euismod.in.dolor@utquam.org','0'),(99,'Hermione X. Wheeler','cpf_cliente',30,'2020-08-26','Rua Fábia','0','Nunc.sed@Sed.co.uk','0'),(100,'Moana Fuller','cpf_cliente',33,'2020-08-26','Atualizar, preencher Endereço','0','sed.sapien@Aliquamultrices.ca','0'),(101,'Paki U. Maldonado','cpf_cliente',45,'2020-08-26','Atualizar, preencher Endereço','0','vehicula.Pellentesque.tincidunt@idmagna.org','0'),(102,'Imogene S. Randolph','cpf_cliente',44,'2020-08-26','Rua Tito','0','sit.amet@Nulla.net','0'),(103,'Kiona B. Wyatt','cpf_cliente',80,'2020-08-26','Atualizar, preencher Endereço','0','rhoncus.Proin@nonummy.org','0'),(104,'Jordan S. House','cpf_cliente',22,'2020-08-26','Atualizar, preencher Endereço','0','ut.molestie.in@utipsumac.net','0'),(105,'Keith K. Berry','cpf_cliente',55,'2020-08-26','Atualizar, preencher Endereço','0','varius@nunc.net','0'),(106,'Kay I. King','cpf_cliente',53,'2020-08-26','Atualizar, preencher Endereço','0','magna.malesuada@orciin.com','0'),(107,'Cecilia Shannon','cpf_cliente',87,'2020-08-26','Atualizar, preencher Endereço','0','lectus.pede.et@lacusEtiam.org','0'),(108,'Joy Hodges','cpf_cliente',30,'2020-08-26','Rua Fábia','0','Curabitur.massa.Vestibulum@nonleo.co.uk','0'),(109,'Cole Guerra','cpf_cliente',69,'2020-08-26','Atualizar, preencher Endereço','0','elit@nuncinterdum.co.uk','0'),(110,'Bert G. Levy','cpf_cliente',36,'2020-08-26','Atualizar, preencher Endereço','0','tempor.bibendum@egestasrhoncusProin.net','0'),(111,'Oren Nunez','cpf_cliente',35,'2020-08-26','Atualizar, preencher Endereço','0','ac.turpis.egestas@nec.net','0'),(112,'Nero D. Savage','cpf_cliente',21,'2020-08-26','Atualizar, preencher Endereço','0','Nunc@tristiquenequevenenatis.ca','0');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `funcionario`
+--
+
+DROP TABLE IF EXISTS `funcionario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `funcionario` (
+  `Matricula` int NOT NULL,
+  `NomeFuncionario` varchar(50) NOT NULL,
+  `CodCargo` char(2) NOT NULL,
+  PRIMARY KEY (`Matricula`),
+  KEY `CodCargo` (`CodCargo`),
+  CONSTRAINT `funcionario_ibfk_1` FOREIGN KEY (`CodCargo`) REFERENCES `cargo` (`CodCargo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `funcionario`
+--
+
+LOCK TABLES `funcionario` WRITE;
+/*!40000 ALTER TABLE `funcionario` DISABLE KEYS */;
+INSERT INTO `funcionario` VALUES (1,'Benedito','C1'),(2,'Rodrigo','C1'),(3,'Neide','C2'),(4,'Francisco','C2'),(5,'Roberta','C3'),(6,'Flavio','C4');
+/*!40000 ALTER TABLE `funcionario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `funcionario_1`
+--
+
+DROP TABLE IF EXISTS `funcionario_1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `funcionario_1` (
+  `Matricula` int NOT NULL,
+  `NomeFuncionario` varchar(50) NOT NULL,
+  `CodCargo` char(2) NOT NULL,
+  PRIMARY KEY (`Matricula`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `funcionario_1`
+--
+
+LOCK TABLES `funcionario_1` WRITE;
+/*!40000 ALTER TABLE `funcionario_1` DISABLE KEYS */;
+/*!40000 ALTER TABLE `funcionario_1` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'itau'
+--
+
+--
+-- Dumping routines for database 'itau'
+--
+
+--
+-- Current Database: `projetopdv`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `projetopdv` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `projetopdv`;
+
+--
+-- Table structure for table `itmn880_pdv`
+--
+
+DROP TABLE IF EXISTS `itmn880_pdv`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `itmn880_pdv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `numero_ponto` int DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `endereco` varchar(100) DEFAULT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `itmn880_pdv`
+--
+
+LOCK TABLES `itmn880_pdv` WRITE;
+/*!40000 ALTER TABLE `itmn880_pdv` DISABLE KEYS */;
+INSERT INTO `itmn880_pdv` VALUES (1,827,'Agencia Jau','Rua Edgarf Ferraz, 471','555-1414'),(2,122,'Agencia Cambuci','Av. Cambuci, 330','555-9876'),(3,627,'Agencia Oz-Asco','Av. dos Autonomistas, 1001','555-1276'),(4,963,'Agencia Centro','Av. Sao Joao, 918','555-5432');
+/*!40000 ALTER TABLE `itmn880_pdv` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `itmn880_solic`
+--
+
+DROP TABLE IF EXISTS `itmn880_solic`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `itmn880_solic` (
+  `num_seq` int NOT NULL AUTO_INCREMENT,
+  `nome_tecnico` varchar(100) DEFAULT NULL,
+  `operadora` varchar(30) DEFAULT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `doc` varchar(20) DEFAULT NULL,
+  `data_solic` date DEFAULT NULL,
+  `hora_solic` time DEFAULT NULL,
+  `situacao` int DEFAULT NULL,
+  `pdv_id` int NOT NULL,
+  PRIMARY KEY (`num_seq`),
+  KEY `fk_pdv_id` (`pdv_id`),
+  CONSTRAINT `fk_pdv_id` FOREIGN KEY (`pdv_id`) REFERENCES `itmn880_pdv` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `itmn880_solic`
+--
+
+LOCK TABLES `itmn880_solic` WRITE;
+/*!40000 ALTER TABLE `itmn880_solic` DISABLE KEYS */;
+INSERT INTO `itmn880_solic` VALUES (1,'Robson Marques Oliveira','Vivo','98765-4321','999.888.777-66','2020-09-01','13:45:00',1,1),(2,'Fredernedson Marques Oliveira','Vivo','98765-4323','999.888.777-67','2020-09-01','13:47:00',3,1),(3,'Alfredson Marques Oliveira','TIM','98765-4324','999.888.777-68','2020-09-01','13:48:00',1,2),(4,'Albertson Marques Oliveira','Claro','98765-4325','999.888.777-69','2020-09-01','13:49:00',2,3);
+/*!40000 ALTER TABLE `itmn880_solic` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_usuario`
+--
+
+DROP TABLE IF EXISTS `tbl_usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_usuario` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) DEFAULT NULL,
+  `link_foto` varchar(255) DEFAULT NULL,
+  `nome` varchar(100) NOT NULL,
+  `racf` varchar(7) DEFAULT NULL,
+  `senha` varchar(30) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UK_dnvgup8yi2egdo5j5ekna9272` (`email`),
+  UNIQUE KEY `UK_r7euuh6tkvt3ep69x1th94984` (`racf`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_usuario`
+--
+
+LOCK TABLES `tbl_usuario` WRITE;
+/*!40000 ALTER TABLE `tbl_usuario` DISABLE KEYS */;
+INSERT INTO `tbl_usuario` VALUES (1,'antonio@antonio.com','https://avatars0.githubusercontent.com/u/69854381?s=460&v=4','Antonio Carlos','antocrj','1234','987654321'),(2,'carlos@antonio.com','https://avatars0.githubusercontent.com/u/69854381?s=460&v=4','Carlos Roberto Asdrubal','carlosc','1234','987654322'),(3,'asdrubal@antonio.com','https://avatars0.githubusercontent.com/u/69854381?s=460&v=4','Asdrubal Carlos Roberto','asdrubr','1234','987654323'),(4,'roberto@antonio.com','https://avatars0.githubusercontent.com/u/69854381?s=460&v=4','Roberto Carlos Asdrubal','robcarl','1234','987654324');
+/*!40000 ALTER TABLE `tbl_usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'projetopdv'
+--
+
+--
+-- Dumping routines for database 'projetopdv'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-09-03 17:22:36
